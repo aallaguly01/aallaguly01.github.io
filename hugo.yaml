@@ -1,7 +1,9 @@
 baseURL: "https://aallaguly01.github.io/"
-locale: en-us
 title: Allaguly Ahmedov
 theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -16,27 +18,16 @@ outputs:
 
 params:
   env: production
-  title: Allaguly Ahmedov
-  description: "Backend / Platform engineer · Go"
   author: Allaguly Ahmedov
   defaultTheme: auto
   disableThemeToggle: false
+  displayFullLangName: true
   ShowShareButtons: false
   ShowReadingTime: false
   ShowPostNavLinks: false
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   hideFooter: false
-
-  profileMode:
-    enabled: true
-    title: Allaguly Ahmedov
-    subtitle: "Backend / Platform engineer · 4+ years of commercial development"
-    buttons:
-      - name: Experience
-        url: /experience/
-      - name: Stack
-        url: /stack/
 
   socialIcons:
     - name: github
@@ -48,13 +39,57 @@ params:
     - name: email
       url: "mailto:aallaguly01@gmail.com"
 
-menu:
-  main:
-    - identifier: experience
-      name: Experience
-      url: /experience/
-      weight: 10
-    - identifier: stack
-      name: Stack
-      url: /stack/
-      weight: 20
+languages:
+  en:
+    label: English
+    locale: en-us
+    weight: 1
+    title: Allaguly Ahmedov
+    params:
+      description: "Backend / Platform engineer · Go"
+      profileMode:
+        enabled: true
+        title: Allaguly Ahmedov
+        subtitle: "Backend / Platform engineer · 4+ years of commercial development"
+        buttons:
+          - name: Experience
+            url: /experience/
+          - name: Stack
+            url: /stack/
+    menus:
+      main:
+        - identifier: experience
+          name: Experience
+          url: /experience/
+          weight: 10
+        - identifier: stack
+          name: Stack
+          url: /stack/
+          weight: 20
+
+  ru:
+    label: Русский
+    locale: ru-ru
+    weight: 2
+    title: Аллагулы Ахмедов
+    params:
+      description: "Backend / Platform-инженер · Go"
+      profileMode:
+        enabled: true
+        title: Аллагулы Ахмедов
+        subtitle: "Backend / Platform-инженер · 4+ года коммерческой разработки"
+        buttons:
+          - name: Опыт
+            url: /ru/experience/
+          - name: Стек
+            url: /ru/stack/
+    menus:
+      main:
+        - identifier: experience
+          name: Опыт
+          url: /ru/experience/
+          weight: 10
+        - identifier: stack
+          name: Стек
+          url: /ru/stack/
+          weight: 20

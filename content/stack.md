@@ -1,6 +1,5 @@
 ---
 title: Stack
-url: /stack/
 hideMeta: true
 ---
 

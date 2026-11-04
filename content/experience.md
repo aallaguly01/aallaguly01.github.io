@@ -1,6 +1,5 @@
 ---
 title: Experience
-url: /experience/
 hideMeta: true
 ---
 
@@ -34,4 +33,4 @@ Kazan · September 2022 — May 2023
 
 ## Education
 
-**Kazan Federal University, Higher Institute of ITIS** — Bachelor's degree, Software Engineering, 2019–2023.
+**Kazan Federal University, Higher Institute of ITIS** — Bachelor's degree, Software Engineering, 2025.
